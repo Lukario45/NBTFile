@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Created by Kevin on 11/12/2014.
  */
-public class Utilitys {
+public class Utilities {
     public static Tag getFromCompound(CompoundTag c, String tagName){
         Tag t = c.get(tagName);
         return t;
