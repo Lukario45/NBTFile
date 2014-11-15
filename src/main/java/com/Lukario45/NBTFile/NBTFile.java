@@ -23,25 +23,25 @@ public class NBTFile {
      */
     private NBTFile(String mainCompoundTagName){}
 
-    public NBTFile(String mainCompoundTagName,String path){
+    public NBTFile(String path,String mainCompoundTagName){
         setMainCompoundTagName(mainCompoundTagName);
         setNbtFile(new File(path));
         setCompressed(false);
         tagMap = new HashMap<String, Tag>();
     }
-    public NBTFile(String mainCompoundTagName,String path, Boolean compressed){
+    public NBTFile(String path,String mainCompoundTagName, Boolean compressed){
         setMainCompoundTagName(mainCompoundTagName);
         setNbtFile(new File(path));
         setCompressed(compressed);
         tagMap = new HashMap<String, Tag>();
     }
-    public NBTFile(String mainCompoundTagName,File file){
+    public NBTFile(File file,String mainCompoundTagName){
         setMainCompoundTagName(mainCompoundTagName);
         setNbtFile(file);
         setCompressed(false);
         tagMap = new HashMap<String, Tag>();
     }
-    public NBTFile(String mainCompoundTagName,File file, Boolean Compressed){
+    public NBTFile(File file,String mainCompoundTagName, Boolean Compressed){
         setMainCompoundTagName(mainCompoundTagName);
         setNbtFile(file);
         setCompressed(compressed);
